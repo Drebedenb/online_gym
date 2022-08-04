@@ -11,9 +11,11 @@
         <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
         <li><a href="/online_gym/about.php" class="nav-link px-2 link-dark">About</a></li>
     </ul>
+    <div class="col-md-3">
+        <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signModal">Sign-up</button>
 
-    <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
+        <?php require "loginModalWindow.php" ?>
+        <?php require "signModalWindow.php" ?>
     </div>
 </header>
